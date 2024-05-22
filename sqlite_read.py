@@ -6,7 +6,7 @@ print("Database connected")
 cursor = sqliteConnection.cursor()
 print("Database intialized")
 
-sql_read_query = "SELECT * FROM emp;"
+sql_read_query = "SELECT * FROM stu;"
 cursor.execute(sql_read_query)
 print(cursor.fetchall())
 
