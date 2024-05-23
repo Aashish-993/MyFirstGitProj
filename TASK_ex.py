@@ -46,7 +46,7 @@ def delete_employee():
 
     sqliteConnection = sqlite3.connect('employee.db')
     cursor = sqliteConnection.cursor()
-    cursor.execute('DELETE FROM employee WHERE id = ?', (emp_id))
+    cursor.execute('DELETE FROM employee WHERE id = ?', (emp_id,))
 
     if cursor.rowcount > 0:
         print("employee deleted successfully")
