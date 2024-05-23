@@ -7,7 +7,7 @@ cursor = sqliteConnection.cursor()
 print("Database initialized")
 
 create_table_query = """
-CREATE TABLE IF NOT EXISTS stu (id integer primary key AUTOINCREMENT, name text, address text, age int):
+CREATE TABLE IF NOT EXISTS stu (id integer primary key AUTOINCREMENT, name text, address text, age int);
 """
 cursor.execute(create_table_query)
 
